@@ -21,7 +21,7 @@ while True:
 
     if new_external_ip != external_ip:
         changeIP(new_external_ip)
-        message = 'Die IP hat sich geändert:\n\n%s\n\nhttps://kis.hosteurope.de/' % external_ip
+        message = 'Your IP has changed to:\n\n%s\n\nVisit your stupid hoste, that does not have an API for this nonsense' % external_ip
         telegram_bot_sendtext(message)
     else:
         time.sleep(3600)
